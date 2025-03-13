@@ -9,9 +9,9 @@ INTEGER, PLUS, MINUS, MUL, DIV, EOF = (
 
 class Token(object):
     def __init__(self, type, value):
-        # token type: INTEGER, MUL, DIV, or EOF
+        # token type: INTEGER, PLUS, MINUS, MUL, DIV, or EOF
         self.type = type
-        # token value: non-negative integer value, '*', '/', or None
+        # token value: non-negative integer value, '+', '-', '*', '/', or None
         self.value = value
 
     def __str__(self):
